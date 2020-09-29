@@ -14,9 +14,12 @@ Write this in one line of Python (don’t worry if you can’t figure this out a
 we’ll get to it soon)
 """
 
+def common(list_a, list_b):
+    return set(a).intersection(b)
+
 import random
 
-a = random.sample(range(1, 99), random.randint(1, 99))
-b = random.sample(range(1, 99), random.randint(1, 99))
+a = random.sample(range(1, 99), random.randint(1, 98))
+b = random.sample(range(1, 99), random.randint(1, 98))
 
-print(list(set(a).intersection(b)))
+print(common(a, b))
