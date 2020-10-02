@@ -80,7 +80,7 @@ while game_on:
         time.sleep(1)
         print(f"My guess is... {guess}!! ")
         time.sleep(2)
-        user_answer = input("So, how close was I?? -> ").lower()
+        user_answer = input("So, how close was IS?? -> ").lower()
         while not is_valid(user_answer):
             print("I'm sorry, but that does not tell me anything...")
             time.sleep(1)
